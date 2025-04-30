@@ -10,7 +10,8 @@
 </head>
 
 <body>
-    <div id="header-container"></div>
+    <div id="header"></div>
+    <div id="hero"></div>
     <!-- ...your main content here... -->
     <div id="footer-container"></div>
     <script>
@@ -18,7 +19,15 @@
         fetch('../source/components/header.html')
             .then(response => response.text())
             .then(data => {
-                document.getElementById('header-container').innerHTML = data;
+                document.getElementById('header').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading header:', error));
+            
+        // Load hero
+        fetch('../source/components/hero.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('hero').innerHTML = data;
             })
             .catch(error => console.error('Error loading header:', error));
 
