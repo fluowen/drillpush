@@ -13,32 +13,22 @@
     <div id="header"></div>
     <div id="hero"></div>
     <!-- ...your main content here... -->
-    <div id="footer-container"></div>
-    <script>
-        // Load header
-        fetch('/source/components/header.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('header').innerHTML = data;
-            })
-            .catch(error => console.error('Error loading header:', error));
-            
-        // Load hero
-        fetch('./source/components/hero.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('hero').innerHTML = data;
-            })
-            .catch(error => console.error('Error loading header:', error));
+    <div id="footer"></div>
 
-        // Load footer
-        fetch('../source/components/footer.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('footer-container').innerHTML = data;
-            })
-            .catch(error => console.error('Error loading footer:', error));
+    <script>
+        function loadComponent(id, url) {
+            fetch(url)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById(id).innerHTML = data;
+                });
+        }
+        // Carregar Header e Footer
+        loadComponent('header', '/source/components/header.html');
+        loadComponent('hero', '../source/components/hero.html');
+        loadComponent('footer', 'source/components/footer.html'); 
     </script>
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
