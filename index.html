@@ -16,7 +16,7 @@
     <div id="footer-container"></div>
     <script>
         // Load header
-        fetch('/source/components/header.html')
+        fetch('../source/components/header.html')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('header').innerHTML = data;
@@ -24,7 +24,7 @@
             .catch(error => console.error('Error loading header:', error));
             
         // Load hero
-        fetch('/source/components/hero.html')
+        fetch('drillpush/source/components/hero.html')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('hero').innerHTML = data;
