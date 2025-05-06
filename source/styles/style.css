@@ -48,13 +48,11 @@
   display: inline-block;
 }
 
-li {
+li::marker {
   color: #F6A728;
+  
 }
 
-#equipments.li {
-  color: #F6A728;
-  list-style-type: none;
-  padding-left: 0px;
+body {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
 }
-
