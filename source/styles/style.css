@@ -1,9 +1,7 @@
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
   background-color: transparent;
-  width: 300px;
-  height: 360px;
-  border: 1px solid #f1f1f1;
+  height: 360px; /* Restaurado: height fixo */
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
 
@@ -29,6 +27,10 @@
   height: 100%;
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
+  overflow: hidden;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Style the front side (fallback if image is missing) */
@@ -42,6 +44,9 @@
   background-color: white;
   color: black;
   transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .svg {
@@ -56,4 +61,71 @@ li::marker {
 body {
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
 
+}
+
+/* Add new styles for text adjustments */
+.flip-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    min-height: 3.6rem; /* Forces same height for all titles */
+    display: flex;
+    align-items: center;
+}
+
+.flip-card h5 {
+    font-size: 1rem;
+    line-height: 1.4;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+
+.flip-card-back ul {
+    padding-left: 1.2rem;
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.flip-card-back li {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin-bottom: 0.8rem;
+}
+
+/* Responsive text adjustments */
+@media (max-width: 768px) {
+    .flip-card h2 {
+        font-size: 1.25rem;
+        min-height: 3rem;
+    }
+    
+    .flip-card h5 {
+        font-size: 0.9rem;
+    }
+    
+    .flip-card li {
+        font-size: 0.85rem;
+    }
+}
+
+#rental {
+    background-color: #FAF6EF;
+    border-radius: 1rem;
+}
+
+#equipments {
+    background-color: #FAF6EF;
+}
+
+#footer {
+    background-color: #D9851E;
+}
+
+#footer .nav-link,
+#footer .text-body-secondary,
+#footer .bi {
+    color: #FAF6EF !important;
 }
