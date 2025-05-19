@@ -111,13 +111,32 @@ body {
     }
 }
 
-#rental {
+#hero {
     background-color: #FAF6EF;
     border-radius: 1rem;
 }
 
-#equipments {
+#rental {
+    background-color: #FFFFFF;
+    border-radius: 1rem;
+}
+
+#rental img {
+    box-shadow: none;
+    filter: drop-shadow(none);
+}
+
+#differentials {
     background-color: #FAF6EF;
+}
+
+#equipments img {
+    box-shadow: none;
+    filter: drop-shadow(none);
+}
+
+#equipments {
+    background-color: #FFFFFF;
 }
 
 #footer {
@@ -128,4 +147,12 @@ body {
 #footer .text-body-secondary,
 #footer .bi {
     color: #FAF6EF !important;
+}
+
+#carouselAutoplaying {
+    background-color: #FAF6EF;
+}
+
+#myCarousel {
+    background-color: #FAF6EF;
 }
