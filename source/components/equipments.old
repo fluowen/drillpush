@@ -1,9 +1,9 @@
 <div id="equipments" class="container py-5">
-    <div class="row border-top pt-5">
-        <div class="col-md-6">
+    <div class="row border-top pt-5 align-items-center justify-content-center">
+        <div class="col-lg-6">
             <img src="./source/images/013_Image.svg" alt="">
         </div>
-        <div class="col-md-6">
+        <div class="col-lg-6">
             <img src="./source/images/Picture3.png" alt="" class="img-fluid w-100 shadow-none">
             <!--
             <h1 class="text-body-emphasis mb-5">NOSSOS <br><strong><span
