@@ -1,0 +1,226 @@
+/* Colors
+#E29036
+#FFC000​
+#F1B32A​
+#000000​
+
+#273B46
+#F6BC51
+#FF914C
+#F3B02A
+*/
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  height: 360px;
+  /* Restaurado: height fixo */
+  perspective: 1000px;
+  /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  /* Safari */
+  backface-visibility: hidden;
+  overflow: hidden;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #F6A728;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: white;
+  color: black;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.svg {
+  display: inline-block;
+}
+
+li::marker {
+  color: #F6A728;
+
+}
+
+body {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+
+}
+
+/* Add new styles for text adjustments */
+.flip-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  min-height: 3.6rem;
+  /* Forces same height for all titles */
+  display: flex;
+  align-items: center;
+}
+
+.flip-card h5 {
+  font-size: 1rem;
+  line-height: 1.4;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+
+.flip-card-back ul {
+  padding-left: 1.2rem;
+  margin: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.flip-card-back li {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  margin-bottom: 0.8rem;
+}
+
+/* Responsive text adjustments */
+@media (max-width: 768px) {
+  .flip-card h2 {
+    font-size: 1.25rem;
+    min-height: 3rem;
+  }
+
+  .flip-card h5 {
+    font-size: 0.9rem;
+  }
+
+  .flip-card li {
+    font-size: 0.85rem;
+  }
+}
+
+#rental {
+  background-color: #FFFFFF;
+  border-radius: 1rem;
+  font-weight: bold;
+  font-size: large;
+}
+
+#rental img {
+  box-shadow: none;
+  filter: drop-shadow(none);
+}
+
+#equipments img {
+  box-shadow: none;
+  filter: drop-shadow(none);
+}
+
+#equipments {
+  background-color: #FFFFFF;
+  font-size: x-large;
+
+}
+
+#footer {
+  background-color: #D9851E;
+}
+
+#footer .nav-link,
+#footer .text-body-secondary,
+#footer .bi {
+  color: #FAF6EF !important;
+}
+
+#carouselAutoplaying {
+  background-color: #FAF6EF;
+}
+
+#myCarousel {
+  background-color: #FAF6EF;
+}
+
+#contacts {
+  font-size: x-large;
+
+}
+
+#contacts .bi {
+  color: #F6A728;
+  font-size: 2rem;
+}
+
+.btn-primary {
+  background: #F6A728;
+  border-color: #F6A728;
+  color: #273B46
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background: none;
+  border-color: #273B46;
+  color: #273B46;
+}
+
+.btn-secondary {
+  background: none;
+  border-color: #273B46;
+  color: #273B46;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+  background: #F6A728;
+  border-color: #F6A728;
+  color: #273B46;
+}
+
+.text-body-emphasis {
+  color: #F6A728 !important;
+}
+
+.accordion {
+  --bs-accordion-bg: #FAF6EF;
+  --bs-accordion-color: #1F2933;
+  --bs-accordion-border-color: #F6A728;
+  --bs-accordion-active-color: #1F2933;
+  --bs-accordion-active-bg: #F6A728;
+  --bs-accordion-inner-border-radius:#F6A728;
+}
+
+.lead {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #273B46;
+  margin-bottom: 1.5rem;
+}
