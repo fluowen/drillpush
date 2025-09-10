@@ -155,8 +155,158 @@
                     </div>
                 </div>
                 <div class="col-9">
-                    <div id="drillrigs"></div>
-                    <div id="toolingandconsumables"></div>
+                    <div class="row row-cols-1 row-cols-md-4 g-2 mb-5">
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="/source/images/product0001_Portable Diamond Core Drill Rig EP600W.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">Portable Diamond Core Drill Rig EP600W</p>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-body-secondary">
+                                        <a href="https://wa.me/16476280648" class="nav-link px-2 text-body-secondary"
+                                            target="_blank">WhatsApp <i class="bi bi-whatsapp"></i>
+                                        </a>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="/source/images/product0002_Portable Diamond Core Drill Rig EP800W.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">Portable Diamond Core Drill Rig EP800W</p>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-body-secondary">
+                                        <a href="https://wa.me/16476280648" class="nav-link px-2 text-body-secondary"
+                                            target="_blank">WhatsApp <i class="bi bi-whatsapp"></i>
+                                        </a>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="/source/images/product0003_Portable Diamond Core Drill Rig EP1000W.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">Portable Diamond Core Drill Rig EP1000W</p>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-body-secondary">
+                                        <a href="https://wa.me/16476280648" class="nav-link px-2 text-body-secondary"
+                                            target="_blank">WhatsApp <i class="bi bi-whatsapp"></i>
+                                        </a>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="/source/images/product0004_Portable Direct Push Drill Rig EP1000D.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">Portable Direct Push Drill Rig EP1000D</p>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-body-secondary">
+                                        <a href="https://wa.me/16476280648" class="nav-link px-2 text-body-secondary"
+                                            target="_blank">WhatsApp <i class="bi bi-whatsapp"></i>
+                                        </a>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="/source/images/product0005_Compact Direct Push Drill Rig EP1000p.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">Compact Direct Push Drill Rig EP1000+</p>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-body-secondary">
+                                        <a href="https://wa.me/16476280648" class="nav-link px-2 text-body-secondary"
+                                            target="_blank">WhatsApp <i class="bi bi-whatsapp"></i>
+                                        </a>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="/source/images/product0006_EP2000E Drill Rig.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">EP2000E Drill Rig</p>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-body-secondary">
+                                        <a href="https://wa.me/16476280648" class="nav-link px-2 text-body-secondary"
+                                            target="_blank">Get a quoting <i class="bi bi-file-text"></i>
+                                        </a>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="/source/images/product0007_Direct Push Drill Rig EP2000S.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">Direct Push Drill Rig EP2000S</p>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-body-secondary">
+                                        <a href="https://wa.me/16476280648" class="nav-link px-2 text-body-secondary"
+                                            target="_blank">WhatsApp <i class="bi bi-whatsapp"></i>
+                                        </a>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="/source/images/product0008_Direct Push Drill Rig EP2000p.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">Direct Push Drill Rig EP2000+</p>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-body-secondary">
+                                        <a href="https://wa.me/16476280648" class="nav-link px-2 text-body-secondary"
+                                            target="_blank">WhatsApp <i class="bi bi-whatsapp"></i>
+                                        </a>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="/source/images/product0009_Multifunctional 100m Direct Push Drill Rig EP4000C.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">Multifunctional 100m Direct Push Drill Rig EP4000C</p>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-body-secondary">
+                                        <a href="https://wa.me/16476280648" class="nav-link px-2 text-body-secondary"
+                                            target="_blank">WhatsApp <i class="bi bi-whatsapp"></i>
+                                        </a>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="/source/images/product0010_Sonic drill rig EP5100A.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">Sonic drill rig EP5100A</p>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-body-secondary">
+                                        <a href="https://wa.me/16476280648" class="nav-link px-2 text-body-secondary"
+                                            target="_blank">WhatsApp <i class="bi bi-whatsapp"></i>
+                                        </a>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -175,39 +325,9 @@
 
         // Carregar Header e Footer
         loadComponent('header', '/source/pt-br/components/header.html');
-        // ...existing code...
-        loadComponent('drillrigs', '/source/pt-br/components/drillrigs.html', function () {
-            // Carrega o botão popover em todos os cards
-            fetch('/source/pt-br/components/popover.html')
-                .then(response => response.text())
-                .then(popoverBtnHtml => {
-                    document.querySelectorAll('.popover').forEach(el => {
-                        el.innerHTML = popoverBtnHtml;
-                    });
-                    // Inicializa todos os popovers
-                    document.querySelectorAll('[data-bs-toggle="popover"]').forEach(function (popoverTriggerEl) {
-                        new bootstrap.Popover(popoverTriggerEl);
-                    });
-                });
-        });
-        loadComponent('toolingandconsumables', '/source/pt-br/components/toolingandconsumables.html', function () {
-            // Carrega o botão popover em todos os cards
-            fetch('/source/pt-br/components/popover.html')
-                .then(response => response.text())
-                .then(popoverBtnHtml => {
-                    document.querySelectorAll('.popover').forEach(el => {
-                        el.innerHTML = popoverBtnHtml;
-                    });
-                    // Inicializa todos os popovers
-                    document.querySelectorAll('[data-bs-toggle="popover"]').forEach(function (popoverTriggerEl) {
-                        new bootstrap.Popover(popoverTriggerEl);
-                    });
-                });
-        });
         loadComponent('contact', '/source/pt-br/components/contact.html');
         loadComponent('footer', '/source/pt-br/components/footer.html'); 
     </script>
-
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
