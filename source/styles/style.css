@@ -116,9 +116,9 @@
     margin: 0;
 }
 
+
 .hero {
   position: relative;
-  background-image: url('/source/images/herobg.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
