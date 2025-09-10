@@ -10,124 +10,6 @@
 #F3B02A
 */
 
-/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
-.flip-card {
-  background-color: transparent;
-  height: 360px;
-  /* Restaurado: height fixo */
-  perspective: 1000px;
-  /* Remove this if you don't want the 3D effect */
-}
-
-/* This container is needed to position the front and back side */
-.flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-}
-
-/* Do an horizontal flip when you move the mouse over the flip box container */
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-/* Position the front and back side */
-.flip-card-front,
-.flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-  /* Safari */
-  backface-visibility: hidden;
-  overflow: hidden;
-  padding: 1.5rem;
-  display: flex;
-  flex-direction: column;
-}
-
-/* Style the front side (fallback if image is missing) */
-.flip-card-front {
-  background-color: #F6A728;
-  color: black;
-}
-
-/* Style the back side */
-.flip-card-back {
-  background-color: white;
-  color: black;
-  transform: rotateY(180deg);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.svg {
-  display: inline-block;
-}
-
-li::marker {
-  color: #F6A728;
-
-}
-
-body {
-  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-
-}
-
-/* Add new styles for text adjustments */
-.flip-card h2 {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-  min-height: 3.6rem;
-  /* Forces same height for all titles */
-  display: flex;
-  align-items: center;
-}
-
-.flip-card h5 {
-  font-size: 1rem;
-  line-height: 1.4;
-  flex-grow: 1;
-  display: flex;
-  align-items: center;
-}
-
-.flip-card-back ul {
-  padding-left: 1.2rem;
-  margin: 0;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.flip-card-back li {
-  font-size: 0.9rem;
-  line-height: 1.4;
-  margin-bottom: 0.8rem;
-}
-
-/* Responsive text adjustments */
-@media (max-width: 768px) {
-  .flip-card h2 {
-    font-size: 1.25rem;
-    min-height: 3rem;
-  }
-
-  .flip-card h5 {
-    font-size: 0.9rem;
-  }
-
-  .flip-card li {
-    font-size: 0.85rem;
-  }
-}
-
 #rental {
   background-color: #FFFFFF;
   border-radius: 1rem;
@@ -232,4 +114,25 @@ body {
     min-width: 0;
     padding: 0;
     margin: 0;
+}
+
+.hero {
+  background-image: url('/source/images/herobg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  display: flex;           /* Garante que o conteúdo interno ocupe toda a altura */
+  align-items: stretch;    /* Estica o conteúdo interno verticalmente */
+}
+
+.summary {
+  background-color: rgba(255, 255, 255, 0.8); /* Fundo branco com transparência */
+  padding: 2rem; /* Espaçamento interno */
+  border-radius: 1rem; /* Bordas arredondadas */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  height: auto; /* Ajusta a altura automaticamente */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centraliza verticalmente o conteúdo */
 }
