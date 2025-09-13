@@ -232,9 +232,23 @@
         }
 
         // Carregar Header e Footer
-        loadComponent('header', '/source/pt-br/components/header.html');
+        loadComponent('header', './source/pt-br/components/header.html');
         // ...existing code...
-        loadComponent('drillrigs', '/source/pt-br/components/drillrigs.html', function () {
+        loadComponent('drillrigs', './source/pt-br/components/drillrigs.html', function () {
+            // Carrega o botão popover em todos os cards
+            fetch('./source/pt-br/components/popover.html')
+                .then(response => response.text())
+                .then(popoverBtnHtml => {
+                    document.querySelectorAll('.popover').forEach(el => {
+                        el.innerHTML = popoverBtnHtml;
+                    });
+                    // Inicializa todos os popovers
+                    document.querySelectorAll('[data-bs-toggle="popover"]').forEach(function (popoverTriggerEl) {
+                        new bootstrap.Popover(popoverTriggerEl);
+                    });
+                });
+        });
+        loadComponent('toolingandconsumables', './source/pt-br/components/toolingandconsumables.html', function () {
             // Carrega o botão popover em todos os cards
             fetch('/source/pt-br/components/popover.html')
                 .then(response => response.text())
@@ -248,22 +262,8 @@
                     });
                 });
         });
-        loadComponent('toolingandconsumables', '/source/pt-br/components/toolingandconsumables.html', function () {
-            // Carrega o botão popover em todos os cards
-            fetch('/source/pt-br/components/popover.html')
-                .then(response => response.text())
-                .then(popoverBtnHtml => {
-                    document.querySelectorAll('.popover').forEach(el => {
-                        el.innerHTML = popoverBtnHtml;
-                    });
-                    // Inicializa todos os popovers
-                    document.querySelectorAll('[data-bs-toggle="popover"]').forEach(function (popoverTriggerEl) {
-                        new bootstrap.Popover(popoverTriggerEl);
-                    });
-                });
-        });
-        loadComponent('contact', '/source/pt-br/components/contact.html');
-        loadComponent('footer', '/source/pt-br/components/footer.html'); 
+        loadComponent('contact', './source/pt-br/components/contact.html');
+        loadComponent('footer', './source/pt-br/components/footer.html'); 
     </script>
 
 
