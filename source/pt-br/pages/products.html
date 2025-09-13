@@ -239,7 +239,7 @@
         loadComponent('contact', '/dev.drillpush/source/pt-br/components/contact.html');
         loadComponent('drillrigs', '/dev.drillpush/source/pt-br/components/drillrigs.html', function () {
             // Carrega o botão popover em todos os cards
-            fetch('/source/pt-br/components/popover.html')
+            fetch('/dev.drillpush/source/pt-br/components/popover.html')
                 .then(response => response.text())
                 .then(popoverBtnHtml => {
                     document.querySelectorAll('.popover').forEach(el => {
