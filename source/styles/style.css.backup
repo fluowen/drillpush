@@ -1,12 +1,13 @@
-/* Colors Palette
-#E29036 - Orange
-#FFC000 - Yellow
-#F1B32A - Gold
-#000000 - Black
-#273B46 - Dark Blue
-#F6BC51 - Light Gold
-#FF914C - Orange Red
-#F3B02A - Bright Gold
+/* Colors
+#E29036
+#FFC000
+#F1B32A
+#000000
+
+#273B46
+#F6BC51
+#FF914C
+#F3B02A
 */
 
 #rental {
@@ -29,6 +30,7 @@
 #equipments {
   background-color: #FFFFFF;
   font-size: x-large;
+
 }
 
 #footer {
@@ -51,6 +53,7 @@
 
 #contacts {
   font-size: x-large;
+
 }
 
 #contacts .bi {
@@ -94,7 +97,7 @@
   --bs-accordion-border-color: #F6A728;
   --bs-accordion-active-color: #1F2933;
   --bs-accordion-active-bg: #F6A728;
-  --bs-accordion-inner-border-radius: #F6A728;
+  --bs-accordion-inner-border-radius:#F6A728;
 }
 
 .lead {
@@ -104,6 +107,7 @@
   margin-bottom: 1.5rem;
 }
 
+/* Pode ser colocado em /source/styles/style.css ou dentro de <style> */
 .popover {
     display: inline-block;
     width: auto;
@@ -111,6 +115,7 @@
     padding: 0;
     margin: 0;
 }
+
 
 .hero {
   position: relative;
@@ -120,7 +125,7 @@
   width: 100%;
   display: flex;
   align-items: stretch;
-  overflow: hidden;
+  overflow: hidden; /* Garante que o vídeo não ultrapasse o container */
 }
 
 .hero video.bg-video {
@@ -129,9 +134,9 @@
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: cover; /* Faz o vídeo cobrir todo o container */
   z-index: 0;
-  pointer-events: none;
+  pointer-events: none; /* Permite clicar nos elementos acima do vídeo */
 }
 
 .hero > *:not(video) {
@@ -140,12 +145,12 @@
 }
 
 .summary {
-  background-color: rgba(255, 255, 255, 0.8);
-  padding: 2rem;
-  border-radius: 1rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  height: auto;
+  background-color: rgba(255, 255, 255, 0.8); /* Fundo branco com transparência */
+  padding: 2rem; /* Espaçamento interno */
+  border-radius: 1rem; /* Bordas arredondadas */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  height: auto; /* Ajusta a altura automaticamente */
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: center; /* Centraliza verticalmente o conteúdo */
 }
