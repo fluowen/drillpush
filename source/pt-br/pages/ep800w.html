@@ -963,16 +963,16 @@
         }
 
         // Carregar Header e Footer
-        loadComponent('header', '/source/pt-br/components/header.html');
-        loadComponent('contact', '/source/pt-br/components/contact.html');
+        loadComponent('header', './source/pt-br/components/header.html');
+        loadComponent('contact', './source/pt-br/components/contact.html');
         // Carregar o accordion de produtos e aplicar o fechamento/abertura conforme o tamanho da tela
-        loadComponent('productsAccordion', '/source/pt-br/components/productsAccordion.html', function () {
+        loadComponent('productsAccordion', './source/pt-br/components/productsAccordion.html', function () {
             updateAccordionState();
             window.addEventListener('resize', updateAccordionState);
         });
-        loadComponent('drillrigs', '/source/pt-br/components/drillrigs.html', function () {
+        loadComponent('drillrigs', './source/pt-br/components/drillrigs.html', function () {
             // Carrega o botão popover em todos os cards
-            fetch('/source/pt-br/components/popover.html')
+            fetch('./source/pt-br/components/popover.html')
                 .then(response => response.text())
                 .then(popoverBtnHtml => {
                     document.querySelectorAll('.popover').forEach(el => {
@@ -984,9 +984,9 @@
                     });
                 });
         });
-        loadComponent('toolingandconsumables', '/source/pt-br/components/toolingandconsumables.html', function () {
+        loadComponent('toolingandconsumables', './source/pt-br/components/toolingandconsumables.html', function () {
             // Carrega o botão popover em todos os cards
-            fetch('/source/pt-br/components/popover.html')
+            fetch('./source/pt-br/components/popover.html')
                 .then(response => response.text())
                 .then(popoverBtnHtml => {
                     document.querySelectorAll('.popover').forEach(el => {
@@ -998,7 +998,7 @@
                     });
                 });
         });
-        loadComponent('footer', '/source/pt-br/components/footer.html');
+        loadComponent('footer', './source/pt-br/components/footer.html');
 
     </script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
