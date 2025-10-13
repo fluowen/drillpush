@@ -50,55 +50,27 @@
     </script>
 </head>
 
+
 <body>
     <div id="header"></div>
     <div id="contact"></div>
-    
-    <div class="container m-5">
-        <div class="row g-5 m-5">
-            <div class="col-md-6">
-                <h1>
-                    Principios
-                </h1>
-                <ul>
-                    <li>Somos guiados pela <strong>segurança e sustentabilidade</strong>, priorizamos a integridade das
-                        pessoas
-                        e do meio ambiente em todas as ações, com equipamentos certificados e práticas ecoeficientes.
-                    </li>
-                    <li>Impulsionados pela <strong>excelência técnica e inovação</strong>, investimos continuamente em
-                        tecnologia de ponta para elevar padrões operacionais.</li>
-                    <li>Pautados pela <strong>transparência e ética</strong>, construímos relações de confiança através
-                        de
-                        compromissos claros e comunicação honesta.</li>
-                    <li>Movidos pelo <strong>espírito colaborativo, atuamos próximos aos clientes</strong>,
-                        transformando
-                        desafios em soluções ágeis e customizadas. Esses pilares são a essência de quem somos.</li>
-                </ul>
-            </div>
-            <div class="col-md-6">
-                <div class="row g-5 mx-5">
-                    <div class="col">
-                        <h1>
-                            Missão
-                        </h1>
-                        <p>
-                            Oferecer equipamentos de alta qualidade e serviços profissionais para projetos de
-                            perfuração,
-                            garantindo
-                            eficiência, segurança, sustentabilidade e melhor custo-benefício.
-                        </p>
-                    </div>
-                </div>
-                <div class="row g-5 mx-5">
-                    <div class="col">
-                        <h1>
-                            Visão
-                        </h1>
-                        <p>
-                            Ser referência nacional em locação de equipamentos e serviços de perfuração e sondagem,
-                            destacando-se pela
-                            inovação, excelência técnica e compromisso com a sustentabilidade e segurança.
-                        </p>
+
+    <div class="container">
+        <h1 class="my-5">Disposable drill bit</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 mb-5" id="productsAccordion"></div>
+                <div class="col-md-9">
+                    <div class="container mb-5">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="https://32435763.s21i.faiusr.com/4/ABUIABAEGAAgoYexsgYo8OyDjAIwoAY4oAY.png"
+                                    alt="Disposable drill bit" class="img-fluid">
+                            </div>
+                            <div class="col-md-8">
+                                <h3>Disposable drill bit</h3>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -116,12 +88,58 @@
                 });
         }
 
-        // Carregar Header e Footer
-        loadComponent('header', '/source/pt-br/components/header.html');
-        loadComponent('contact', '/source/pt-br/components/contact.html');
-        loadComponent('footer', '/source/pt-br/components/footer.html'); 
-    </script>
+        // Fecha os accordions em telas pequenas, abre em telas grandes
+        function updateAccordionState() {
+            if (window.innerWidth < 768) {
+                document.querySelectorAll('.accordion-collapse').forEach(function (el) {
+                    el.classList.remove('show');
+                });
+            } else {
+                document.querySelectorAll('.accordion-collapse').forEach(function (el) {
+                    el.classList.add('show');
+                });
+            }
+        }
 
+        // Carregar Header e Footer
+        loadComponent('header', '/source/en-us/components/header.html');
+        loadComponent('contact', '/source/en-us/components/contact.html');
+        // Carregar o accordion de produtos e aplicar o fechamento/abertura conforme o tamanho da tela
+        loadComponent('productsAccordion', '/source/en-us/components/productsAccordion.html', function () {
+            updateAccordionState();
+            window.addEventListener('resize', updateAccordionState);
+        });
+        loadComponent('drillrigs', '/source/en-us/components/drillrigs.html', function () {
+            // Carrega o botão popover em todos os cards
+            fetch('/source/en-us/components/popover.html')
+                .then(response => response.text())
+                .then(popoverBtnHtml => {
+                    document.querySelectorAll('.popover').forEach(el => {
+                        el.innerHTML = popoverBtnHtml;
+                    });
+                    // Inicializa todos os popovers
+                    document.querySelectorAll('[data-bs-toggle="popover"]').forEach(function (popoverTriggerEl) {
+                        new bootstrap.Popover(popoverTriggerEl);
+                    });
+                });
+        });
+        loadComponent('toolingandconsumables', '/source/en-us/components/toolingandconsumables.html', function () {
+            // Carrega o botão popover em todos os cards
+            fetch('/source/en-us/components/popover.html')
+                .then(response => response.text())
+                .then(popoverBtnHtml => {
+                    document.querySelectorAll('.popover').forEach(el => {
+                        el.innerHTML = popoverBtnHtml;
+                    });
+                    // Inicializa todos os popovers
+                    document.querySelectorAll('[data-bs-toggle="popover"]').forEach(function (popoverTriggerEl) {
+                        new bootstrap.Popover(popoverTriggerEl);
+                    });
+                });
+        });
+        loadComponent('footer', '/source/en-us/components/footer.html');
+
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>

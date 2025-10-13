@@ -41,17 +41,68 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
     </style>
+    <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "tiirtk1rlu");
+</script>
+
+        <!-- Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-XXXXXXXXXX', { 'anonymize_ip': true });
+        </script>
 </head>
 
 <body>
+        <!-- Banner de Consentimento LGPD/GDPR -->
+        <div id="cookieConsent" style="position:fixed;bottom:0;left:0;width:100%;background:#273B46;color:#fff;padding:1rem;z-index:9999;display:none;justify-content:center;align-items:center;gap:1rem;flex-wrap:wrap;">
+            <span>Utilizamos cookies para melhorar sua experiência. Ao continuar navegando, você concorda com nossa <a href="/politica-de-privacidade.html" style="color:#F6A728;text-decoration:underline;">Política de Privacidade</a>.</span>
+            <button id="acceptCookies" style="background:#F6A728;color:#273B46;border:none;padding:0.5rem 1rem;border-radius:0.5rem;cursor:pointer;">Aceitar</button>
+        </div>
+        <script>
+            function setCookie(name, value, days) {
+                var expires = "";
+                if (days) {
+                    var date = new Date();
+                    date.setTime(date.getTime() + (days*24*60*60*1000));
+                    expires = "; expires=" + date.toUTCString();
+                }
+                document.cookie = name + "=" + (value || "")  + expires + "; path=/";
+            }
+            function getCookie(name) {
+                var nameEQ = name + "=";
+                var ca = document.cookie.split(';');
+                for(var i=0;i < ca.length;i++) {
+                    var c = ca[i];
+                    while (c.charAt(0)==' ') c = c.substring(1,c.length);
+                    if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+                }
+                return null;
+            }
+            window.addEventListener('DOMContentLoaded', function() {
+                if (!getCookie('cookieConsent')) {
+                    var consent = document.getElementById('cookieConsent');
+                    consent.style.display = 'flex';
+                    document.getElementById('acceptCookies').onclick = function() {
+                        setCookie('cookieConsent', 'accepted', 365);
+                        consent.style.display = 'none';
+                    };
+                }
+            });
+        </script>
     <div id="header"></div>
     <div id="contact"></div>
     <div id="hero"></div>
     <div id="differentials"></div>
     <div id="services"></div>
-    <!-- ...your main content here... -->
     <div id="footer"></div>
-
+    
     <script>
         function loadComponent(id, url, callback) {
             fetch(url)
