@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>DRILLPUSH | Perfuração Ambiental, Sondagem, Poços e Amostragem de Solo</title>
-    <!--<base href="https://fluowen.github.io/dev.drillpush/">-->
+    <base href="/dev.drillpush/">
     <meta name="description"
         content="Especialistas em perfuração ambiental, sondagem, poço de monitoramento, remediação, bombeamento, injeção, amostragem de solo, áreas contaminadas, sondagem geotécnica, perfuratriz ambiental e sonic drilling.">
     <meta name="keywords"
@@ -29,11 +29,11 @@
     <meta name="twitter:image" content="https://www.drillpush.com.br/source/images/logo000.svg">
 
     <!-- Favicon and styles (keep your existing links below) -->
-    <link rel="icon" type="image/svg+xml" href="/source/images/logo000.svg">
+    <link rel="icon" type="image/svg+xml" href="../../images/logo000.svg">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="/source/styles/style.css">
+    <link rel="stylesheet" href="../../styles/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
@@ -102,16 +102,16 @@
         }
 
         // Carregar Header e Footer
-        loadComponent('header', '/source/pt-br/components/header.html');
-        loadComponent('contact', '/source/pt-br/components/contact.html');
+        loadComponent('header', '../components/header.html');
+        loadComponent('contact', '../components/contact.html');
         // Carregar o accordion de produtos e aplicar o fechamento/abertura conforme o tamanho da tela
-        loadComponent('productsAccordion', '/source/pt-br/components/productsAccordion.html', function () {
+        loadComponent('productsAccordion', '../components/productsAccordion.html', function () {
             updateAccordionState();
             window.addEventListener('resize', updateAccordionState);
         });
-        loadComponent('drillrigs', '/source/pt-br/components/drillrigs.html', function () {
+        loadComponent('drillrigs', '../components/drillrigs.html', function () {
             // Carrega o botão popover em todos os cards
-            fetch('/source/pt-br/components/popover.html')
+            fetch('../components/popover.html')
                 .then(response => response.text())
                 .then(popoverBtnHtml => {
                     document.querySelectorAll('.popover').forEach(el => {
@@ -123,9 +123,9 @@
                     });
                 });
         });
-        loadComponent('toolingandconsumables', '/source/pt-br/components/toolingandconsumables.html', function () {
+        loadComponent('toolingandconsumables', '../components/toolingandconsumables.html', function () {
             // Carrega o botão popover em todos os cards
-            fetch('/source/pt-br/components/popover.html')
+            fetch('../components/popover.html')
                 .then(response => response.text())
                 .then(popoverBtnHtml => {
                     document.querySelectorAll('.popover').forEach(el => {
@@ -137,7 +137,7 @@
                     });
                 });
         });
-        loadComponent('footer', '/source/pt-br/components/footer.html');
+        loadComponent('footer', '../components/footer.html');
 
     </script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
