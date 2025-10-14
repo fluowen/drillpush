@@ -2,10 +2,10 @@
 <html lang="en">
 
 <head>
+    <base href="/dev.drillpush/">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>DRILLPUSH | Perfuração Ambiental, Sondagem, Poços e Amostragem de Solo</title>
-
     <meta name="description"
         content="Especialistas em perfuração ambiental, sondagem, poço de monitoramento, remediação, bombeamento, injeção, amostragem de solo, áreas contaminadas, sondagem geotécnica, perfuratriz ambiental e sonic drilling.">
     <meta name="keywords"
@@ -999,16 +999,16 @@
         }
 
         // Carregar Header e Footer
-        loadComponent('header', '/source/en-us/components/header.html');
-        loadComponent('contact', '/source/en-us/components/contact.html');
+        loadComponent('header', './source/en-us/components/header.html');
+        loadComponent('contact', './source/en-us/components/contact.html');
         // Carregar o accordion de produtos e aplicar o fechamento/abertura conforme o tamanho da tela
-        loadComponent('productsAccordion', '/source/en-us/components/productsAccordion.html', function () {
+        loadComponent('productsAccordion', './source/en-us/components/productsAccordion.html', function () {
             updateAccordionState();
             window.addEventListener('resize', updateAccordionState);
         });
-        loadComponent('drillrigs', '/source/en-us/components/drillrigs.html', function () {
+        loadComponent('drillrigs', './source/en-us/components/drillrigs.html', function () {
             // Carrega o botão popover em todos os cards
-            fetch('/source/en-us/components/popover.html')
+            fetch('./source/en-us/components/popover.html')
                 .then(response => response.text())
                 .then(popoverBtnHtml => {
                     document.querySelectorAll('.popover').forEach(el => {
@@ -1020,9 +1020,9 @@
                     });
                 });
         });
-        loadComponent('toolingandconsumables', '/source/en-us/components/toolingandconsumables.html', function () {
+        loadComponent('toolingandconsumables', './source/en-us/components/toolingandconsumables.html', function () {
             // Carrega o botão popover em todos os cards
-            fetch('/source/en-us/components/popover.html')
+            fetch('./source/en-us/components/popover.html')
                 .then(response => response.text())
                 .then(popoverBtnHtml => {
                     document.querySelectorAll('.popover').forEach(el => {
@@ -1034,7 +1034,7 @@
                     });
                 });
         });
-        loadComponent('footer', '/source/en-us/components/footer.html');
+        loadComponent('footer', './source/en-us/components/footer.html');
 
     </script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
