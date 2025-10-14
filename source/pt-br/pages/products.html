@@ -102,7 +102,7 @@
             updateAccordionState();
             window.addEventListener('resize', updateAccordionState);
         });
-        loadComponent('drillrigs', './source/pt-br/components/drillrigs.html', function () {
+        loadComponent('drillrigs', '../source/pt-br/components/drillrigs.html', function () {
             // Carrega o botão popover em todos os cards
             fetch('./source/pt-br/components/popover.html')
                 .then(response => response.text())
@@ -130,7 +130,7 @@
                     });
                 });
         });
-        loadComponent('footer', './source/pt-br/components/footer.html');
+        loadComponent('footer', '../source/pt-br/components/footer.html');
 
     </script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
