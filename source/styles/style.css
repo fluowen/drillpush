@@ -9,6 +9,30 @@
 #F3B02A - Bright Gold
 */
 
+/* Ensure footer stays at bottom of page */
+html, body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  min-height: 100vh;
+}
+
+#header,
+#contact,
+#hero,
+#differentials,
+#rental,
+.container.m-5 {
+  flex-shrink: 0;
+}
+
+#footer {
+  margin-top: auto;
+}
+
 #rental {
   background-color: #FFFFFF;
   border-radius: 1rem;
@@ -56,6 +80,21 @@
 #contacts .bi {
   color: #F6A728;
   font-size: 2rem;
+}
+
+/* Navbar styling for proper z-index stacking */
+nav.navbar {
+  position: relative;
+  z-index: 1020;
+}
+
+.navbar-toggler {
+  position: relative;
+  z-index: 1021;
+}
+
+.navbar-collapse {
+  z-index: 1020;
 }
 
 .btn-primary {
@@ -148,4 +187,53 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+/* Header navigation styling */
+.navbar-nav .nav-link {
+  font-size: x-large;
+}
+
+/* Header contact links */
+#contacts a {
+  color: #F6A728;
+}
+
+/* WhatsApp button */
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  background-color: #13F906;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(19, 249, 6, 0.4);
+  transition: all 0.3s ease;
+}
+
+.whatsapp-button:hover {
+  background-color: #0dd902;
+  box-shadow: 0 6px 16px rgba(19, 249, 6, 0.6);
+  transform: scale(1.1);
+}
+
+.whatsapp-button a {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+/* Language toggle images */
+.navbar-nav .nav-link img {
+  height: 48px;
+  width: auto;
+}
 }

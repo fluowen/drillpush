@@ -1,33 +1,31 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <base href="/">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>DRILLPUSH | Environmental Drilling, Geotechnical Investigation, Wells and Soil Sampling</title>
+    <title>DRILLPUSH | Tecnologias e Serviços</title>
     <meta name="description"
-        content="Specialists in environmental drilling, geotechnical investigation, monitoring well installation, remediation, pumping, injection, soil sampling, contaminated sites, environmental drilling rigs, and sonic drilling.">
+        content="Tecnologias avançadas e serviços especializados em perfuração ambiental, sondagem, investigação geotécnica com aplicação integrada de tecnologias reconhecidas internacionalmente.">
     <meta name="keywords"
-        content="Environmental drilling, Geotechnical investigation, Drilling, Monitoring well, Remediation well, Pumping well, Injection well, Soil sampling, Contaminated sites, Geotechnical drilling, Environmental probe, Environmental drilling rig.">
+        content="Tecnologias, Serviços, Perfuração ambiental, Sondagem, MIP, HPT, UVOST, GSW, Dual Tube, Injeção de reagentes">
     <link rel="canonical" href="https://www.drillpush.com.br/">
 
     <!-- Open Graph / Facebook / LinkedIn / YouTube -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.drillpush.com.br/">
-    <meta property="og:title"
-        content="DRILLPUSH | Environmental Drilling, Geotechnical Investigation, Wells and Soil Sampling">
+    <meta property="og:title" content="DRILLPUSH | Tecnologias e Serviços">
     <meta property="og:description"
-        content="Specialists in environmental drilling, geotechnical investigation, monitoring well installation, remediation, pumping, injection, soil sampling, contaminated sites, environmental drilling rigs, and sonic drilling.">
+        content="Tecnologias avançadas e serviços especializados em perfuração ambiental, sondagem, investigação geotécnica.">
     <meta property="og:image" content="https://www.drillpush.com.br/source/images/logo000.svg">
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://www.drillpush.com.br/">
-    <meta name="twitter:title"
-        content="DRILLPUSH | Environmental Drilling, Geotechnical Investigation, Wells and Soil Sampling">
+    <meta name="twitter:title" content="DRILLPUSH | Tecnologias e Serviços">
     <meta name="twitter:description"
-        content="Specialists in environmental drilling, geotechnical investigation, monitoring well installation, remediation, pumping, injection, soil sampling, contaminated sites, environmental drilling rigs, and sonic drilling.">
+        content="Tecnologias avançadas e serviços especializados em perfuração ambiental, sondagem, investigação geotécnica.">
     <meta name="twitter:image" content="https://www.drillpush.com.br/source/images/logo000.svg">
 
     <!-- Favicon and styles (keep your existing links below) -->
@@ -52,36 +50,10 @@
 <body>
     <div id="header"></div>
     <div id="contact"></div>
+
     <div class="container m-5">
-        <h1>
-            Mission
-        </h1>
-        <p>
-            To offer high-quality equipment and professional services for drilling projects, ensuring efficiency,
-            safety, sustainability, and the best cost-benefit.
-        </p>
-
-        <h1>
-            Vision
-        </h1>
-        <p>
-            To be the national benchmark in drilling and geotechnical investigation equipment rental and services,
-            standing out for innovation, technical excellence, and a commitment to sustainability and safety.
-        </p>
-
-        <h1>
-            Values
-        </h1>
-        <ul>
-            <li>We're guided by <strong>safety and sustainability</strong>, prioritizing the well-being of people and
-                the environment in every action. We use certified equipment and eco-efficient practices.</li>
-            <li>Driven by <strong>excellence and innovation</strong>, we continuously invest in cutting-edge technology
-                to raise operational standards.</li>
-            <li>Rooted in <strong>transparency and ethics</strong>, we build trust through clear commitments and honest
-                communication.</li>
-            <li>Moved by a <strong>spirit, we work closely with clients</strong>, transforming challenges into agile,
-                customized solutions. These pillars are the essence of who we are.</li>
-        </ul>
+        <h1 class="my-5">Tecnologias e Serviços</h1>
+        <div id="services"></div>
     </div>
 
     <div id="footer"></div>
@@ -95,10 +67,11 @@
                 });
         }
 
-        // Carregar Header e Footer
-        loadComponent('header', './source/en-us/components/header.html');
-        loadComponent('contact', './source/en-us/components/contact.html');
-        loadComponent('footer', './source/en-us/components/footer.html'); 
+        // Carregar Header, Services e Footer
+        loadComponent('header', './source/pt-br/components/header.html');
+        loadComponent('contact', './source/pt-br/components/contact.html');
+        loadComponent('services', './source/pt-br/components/services.html');
+        loadComponent('footer', './source/pt-br/components/footer.html');
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
