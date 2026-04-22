@@ -56,7 +56,7 @@
             var lang = navigator.language || navigator.userLanguage;
             if (lang && (lang.toLowerCase().startsWith('pt-br') || lang.toLowerCase().startsWith('pt-pt') || lang.toLowerCase() === 'pt')) {
                 // Portuguese Brazil or Portugal, stay on this page (pt-br)
-            } else {
+            } else if (!window.location.search.includes('lang=pt')) {
                 // Any other language, redirect to English
                 window.location.href = 'source/en-us/index_en-us.html';
             }
