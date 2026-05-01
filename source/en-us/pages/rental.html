@@ -5,30 +5,21 @@
     <base href="/">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>DRILLPUSH | Technologies and Services</title>
+    <title>DRILLPUSH | Machinery and Tool Rental for Drilling</title>
     <meta name="description"
-        content="Advanced technologies and specialized services in environmental drilling, geotechnical investigation with integrated application of internationally recognized technologies.">
+        content="Specialists in machinery and tool rental for environmental, geotechnical, and foundation drilling. Fleet of five medium and large machines, hollow stem augers, direct push rods, and more.">
     <meta name="keywords"
-        content="Technologies, Services, Environmental drilling, Geotechnical investigation, MIP, HPT, UVOST, GSW, Dual Tube, Reagent injection">
+        content="Equipment rental, Machinery rental, Environmental drilling, Hollow stem auger, Direct push, Geotechnical investigation, Foundations, Micropile">
     <link rel="canonical" href="https://www.drillpush.com.br/">
 
-    <!-- Open Graph / Facebook / LinkedIn / YouTube -->
+    <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.drillpush.com.br/">
-    <meta property="og:title" content="DRILLPUSH | Technologies and Services">
+    <meta property="og:title" content="DRILLPUSH | Machinery and Tool Rental for Drilling">
     <meta property="og:description"
-        content="Advanced technologies and specialized services in environmental drilling, geotechnical investigation.">
+        content="Specialists in machinery and tool rental for environmental, geotechnical, and foundation drilling.">
     <meta property="og:image" content="https://www.drillpush.com.br/source/images/logo000.svg">
 
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://www.drillpush.com.br/">
-    <meta name="twitter:title" content="DRILLPUSH | Technologies and Services">
-    <meta name="twitter:description"
-        content="Advanced technologies and specialized services in environmental drilling, geotechnical investigation.">
-    <meta name="twitter:image" content="https://www.drillpush.com.br/source/images/logo000.svg">
-
-    <!-- Favicon and styles (keep your existing links below) -->
     <link rel="icon" type="image/svg+xml" href="./source/images/logo000.svg">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
@@ -51,9 +42,37 @@
     <div id="header"></div>
     <div id="contact"></div>
 
-    <div id="services"></div>
+    <div class="container page-wrapper">
+        <h1 class="page-title">Rental</h1>
+
+        <h2 class="section-title">
+            Specialists in machinery and tool rental for <strong>environmental, geotechnical, and foundation drilling</strong>
+        </h2>
+
+        <p class="lead">DrillPush offers machinery and tool rental solutions for drilling, investigation, and field support operations, serving the environmental, geotechnical, and foundations markets with agility, reliability, and technical support.</p>
+
+        <p>Our equipment fleet consists of machines and tools selected to meet different project types, from activities in contaminated areas to large-scale operations and specific foundation demands.</p>
+
+        <h3 class="subsection-title">Our machinery and tool fleet includes:</h3>
+        <ul class="content-list">
+            <li>Five medium and large machines, tracked or truck-mounted;</li>
+            <li>Large machine with drilling capacity of up to 60 meters (approx. 200 ft);</li>
+            <li>Machines specific for work in contaminated areas;</li>
+            <li>Machines dedicated to the micropile (root pile) market;</li>
+            <li>Hollow stem augers with internal diameters of 4", 7", and 10";</li>
+            <li>Rods for driving, direct push, and piston sampler;</li>
+            <li>Complete equipment for manual surveying;</li>
+            <li>Liner cutting table, liner cutter, and drill;</li>
+            <li>Materials for work front isolation.</li>
+        </ul>
+
+        <a class="btn btn-primary btn-lg px-4 mt-4"
+            href="mailto:contato@drillpush.com?subject=Rental Quote">Request a Quote</a>
+    </div>
 
     <div id="footer"></div>
+    <div id="contactBtn"></div>
+
     <script>
         function loadComponent(id, url, callback) {
             fetch(url)
@@ -64,10 +83,9 @@
                 });
         }
 
-        // Carregar Header, Services e Footer
         loadComponent('header', './source/en-us/components/header.html');
         loadComponent('contact', './source/en-us/components/contact.html');
-        loadComponent('services', './source/en-us/components/services.html');
+        loadComponent('contactBtn', './source/en-us/components/contact.html');
         loadComponent('footer', './source/en-us/components/footer.html');
     </script>
 

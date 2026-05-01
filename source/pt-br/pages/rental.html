@@ -1,34 +1,25 @@
 <!doctype html>
-<html lang="pt-br">
+<html lang="pt">
 
 <head>
     <base href="/">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>DRILLPUSH | Tecnologias e Serviços</title>
+    <title>DRILLPUSH | Locação de Máquinas e Ferramentas para Perfuração</title>
     <meta name="description"
-        content="Tecnologias avançadas e serviços especializados em perfuração ambiental, sondagem, investigação geotécnica com aplicação integrada de tecnologias reconhecidas internacionalmente.">
+        content="Especialistas na locação de máquinas e ferramentas para perfuração ambiental, geotécnica e fundações. Parque de cinco máquinas de médio e grande porte, hollow stem augers, hastes para direct push e muito mais.">
     <meta name="keywords"
-        content="Tecnologias, Serviços, Perfuração ambiental, Sondagem, MIP, HPT, UVOST, GSW, Dual Tube, Injeção de reagentes">
+        content="Locação de equipamentos, Locação de máquinas, Perfuração ambiental, Hollow stem auger, Direct push, Sondagem geotécnica, Fundações, Estaca raiz">
     <link rel="canonical" href="https://www.drillpush.com.br/">
 
-    <!-- Open Graph / Facebook / LinkedIn / YouTube -->
+    <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.drillpush.com.br/">
-    <meta property="og:title" content="DRILLPUSH | Tecnologias e Serviços">
+    <meta property="og:title" content="DRILLPUSH | Locação de Máquinas e Ferramentas para Perfuração">
     <meta property="og:description"
-        content="Tecnologias avançadas e serviços especializados em perfuração ambiental, sondagem, investigação geotécnica.">
+        content="Especialistas na locação de máquinas e ferramentas para perfuração ambiental, geotécnica e fundações.">
     <meta property="og:image" content="https://www.drillpush.com.br/source/images/logo000.svg">
 
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://www.drillpush.com.br/">
-    <meta name="twitter:title" content="DRILLPUSH | Tecnologias e Serviços">
-    <meta name="twitter:description"
-        content="Tecnologias avançadas e serviços especializados em perfuração ambiental, sondagem, investigação geotécnica.">
-    <meta name="twitter:image" content="https://www.drillpush.com.br/source/images/logo000.svg">
-
-    <!-- Favicon and styles (keep your existing links below) -->
     <link rel="icon" type="image/svg+xml" href="./source/images/logo000.svg">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
@@ -51,9 +42,37 @@
     <div id="header"></div>
     <div id="contact"></div>
 
-    <div id="services"></div>
+    <div class="container page-wrapper">
+        <h1 class="page-title">Locação</h1>
+
+        <h2 class="section-title">
+            Especialistas na locação de máquinas e ferramentas para <strong>perfuração ambiental, geotécnica e fundações</strong>
+        </h2>
+
+        <p class="lead">A DrillPush oferece soluções em locação de máquinas e ferramentas para operações de perfuração, investigação e apoio a campo, atendendo com agilidade, confiabilidade e suporte técnico os mercados ambiental, geotécnico e de fundações.</p>
+
+        <p>Nosso parque de equipamentos é composto por máquinas e ferramentas selecionadas para atender diferentes tipos de projeto, desde atividades em áreas contaminadas até operações de maior porte e demandas específicas de fundações.</p>
+
+        <h3 class="subsection-title">Nosso parque de máquinas e ferramentas inclui:</h3>
+        <ul class="content-list">
+            <li>Cinco máquinas de médio e grande porte, sobre esteiras ou acopláveis em caminhões;</li>
+            <li>Máquina de grande porte com capacidade de perfuração de até 60 metros;</li>
+            <li>Máquinas específicas para trabalhos em áreas contaminadas;</li>
+            <li>Máquinas destinadas ao mercado de estaca raiz;</li>
+            <li>Hollow stem augers com diâmetros internos de 4", 7" e 10";</li>
+            <li>Hastes para cravação, direct push e piston sampler;</li>
+            <li>Equipamento completo para sondagem manual;</li>
+            <li>Mesa para corte de liner, cortador de liner e furadeira;</li>
+            <li>Materiais para isolamento de frentes de trabalho.</li>
+        </ul>
+
+        <a class="btn btn-primary btn-lg px-4 mt-4"
+            href="mailto:contato@drillpush.com?subject=Orçamento de Locação de Máquinas e Equipamentos">Solicitar Cotação</a>
+    </div>
 
     <div id="footer"></div>
+    <div id="contactBtn"></div>
+
     <script>
         function loadComponent(id, url, callback) {
             fetch(url)
@@ -64,10 +83,9 @@
                 });
         }
 
-        // Carregar Header, Services e Footer
         loadComponent('header', './source/pt-br/components/header.html');
         loadComponent('contact', './source/pt-br/components/contact.html');
-        loadComponent('services', './source/pt-br/components/services.html');
+        loadComponent('contactBtn', './source/pt-br/components/contact.html');
         loadComponent('footer', './source/pt-br/components/footer.html');
     </script>
 

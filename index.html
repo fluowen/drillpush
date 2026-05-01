@@ -53,11 +53,27 @@
     <!-- Language Detection Script -->
     <script>
         (function() {
-            var lang = navigator.language || navigator.userLanguage;
-            if (lang && (lang.toLowerCase().startsWith('pt-br') || lang.toLowerCase().startsWith('pt-pt') || lang.toLowerCase() === 'pt')) {
-                // Portuguese Brazil or Portugal, stay on this page (pt-br)
-            } else if (!window.location.search.includes('lang=pt')) {
-                // Any other language, redirect to English
+            // URL param ?lang=pt means user explicitly chose PT — save and stay
+            if (window.location.search.includes('lang=pt')) {
+                localStorage.setItem('drillpush_lang', 'pt');
+                return;
+            }
+            var stored = localStorage.getItem('drillpush_lang');
+            // Explicit user preference takes priority over browser language
+            if (stored === 'en') {
+                window.location.href = 'source/en-us/index_en-us.html';
+                return;
+            }
+            if (stored === 'pt') {
+                return;
+            }
+            // First visit: use browser language and save the preference
+            var lang = navigator.language || navigator.userLanguage || '';
+            var isPortuguese = lang.toLowerCase().startsWith('pt');
+            if (isPortuguese) {
+                localStorage.setItem('drillpush_lang', 'pt');
+            } else {
+                localStorage.setItem('drillpush_lang', 'en');
                 window.location.href = 'source/en-us/index_en-us.html';
             }
         })();
@@ -79,7 +95,6 @@
     <div id="contact"></div>
     <div id="hero"></div>
     <div id="differentials"></div>
-    <div id="rental"></div>
     <div id="footer"></div>
 
     <script>
@@ -97,8 +112,7 @@
         loadComponent('contact', 'source/pt-br/components/contact.html');
         loadComponent('hero', 'source/pt-br/components/hero.html');
         loadComponent('differentials', 'source/pt-br/components/differentials.html');
-        loadComponent('rental', 'source/pt-br/components/rental.html');
-        loadComponent('footer', 'source/pt-br/components/footer.html'); 
+        loadComponent('footer', 'source/pt-br/components/footer.html');
     </script>
 
     <script defer src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
