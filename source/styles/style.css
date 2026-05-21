@@ -143,6 +143,10 @@ nav.navbar {
   margin-bottom: 1.5rem;
 }
 
+p {
+  color: #273B46;
+}
+
 .popover {
     display: inline-block;
     width: auto;
@@ -269,9 +273,9 @@ nav.navbar {
 }
 
 .content-list {
-  font-size: 1.25rem;
+  font-size: 1rem;
   color: #273B46;
-  line-height: 1.8;
+  line-height: 1.6;
 }
 
 .content-list li {
